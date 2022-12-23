@@ -26,7 +26,7 @@ void main()
 	printf("\nBFS traversal is \n");
 
 	int start;
-	printf("Enter the starting node");
+	printf("Enter the starting node : ");
 	scanf("%d",&start);
 
 	BFS(start);
@@ -46,7 +46,7 @@ void BFS(int vertex)
 	{
 		if(!visited[j] && graph[vertex][j] == 1 )
 		{
-			BFS(j);
+			BFS(j); //because of queue(Fifo)
 		}
 	}
 }
